@@ -9,7 +9,7 @@ class Navbar extends Component {
             <div class="page-wrapper with-navbar">
                 <nav class="navbar">
                     <div class="navbar-content">
-                        <button class="btn btn-action" type="button" onClick={window.halfmoon.toggleSidebar}>
+                        <button class="btn btn-action" type="button">
                             <i class="fa fa-bars" aria-hidden="true"></i>
                             <span class="sr-only">Toggle sidebar</span>
                         </button>

@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-// import './index.css';
-import "./ui/halfmoon.css"
+
+import './index.css';
 
 import { GlobalHotKeys } from "react-hotkeys";
 import App from './App';

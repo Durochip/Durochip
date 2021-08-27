@@ -1,0 +1,563 @@
+@font-face {
+  font-family: "SansBold";
+  src: url("../../assets/fonts/PTSans-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Barlow";
+  src: url("../../assets/fonts/Barlow-Light.ttf");
+}
+
+* {
+  margin: 0;
+  padding-inline: 0;
+}
+.home {
+  font-size: 19px;
+  line-height: 1.3;
+  --gray-light: #35353a;
+  --gray-med: #2d2d32;
+  --gray-dark: #2a2a2e;
+  --contact-bg-color: #2d2d32;
+  --blue: #00a9e2;
+  background-color: var(--gray-light);
+  color: white;
+  width: 100%;
+  font-family: "Barlow";
+}
+
+.home.card {
+  box-shadow: 0 0 16px 2px rgba(0, 0, 0, 0.2);
+  transition: transform 0.4s;
+  border-radius: 2rem;
+  width: clamp(60vw, 65vw, 90vw);
+  margin: auto;
+  margin-top: 6vw;
+  margin-bottom: 6vw;
+  padding: 2em 4em 2em 4em;
+}
+
+.contact-us {
+  padding: 2em 4em 2em 4em;
+  margin: auto;
+  width: clamp(60vw, 65vw, 90vw);
+  background-color: rgba(33, 37, 41);
+  box-shadow: 0 0 16px 3px rgb(0 0 0 / 30%);
+  border-radius: 2rem;
+  margin-bottom: 6vw;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-inner {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.contact-name,
+.contact-email,
+.contact-msg,
+.contact-insta,
+.contact-linkedin,
+.contact-fb {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.contact-name input {
+  width: 300px;
+  background-color: #35353a;
+  border: 0;
+  outline: none;
+  color: #fff;
+  margin-left: 10px;
+  padding: 10px;
+}
+
+.contact-email input {
+  width: 300px;
+  background-color: #35353a;
+  border: 0;
+  outline: none;
+  color: #fff;
+  margin-left: 10px;
+  padding: 10px;
+}
+
+.contact-msg textarea {
+  width: 300px;
+  background-color: #35353a;
+  border: 0;
+  outline: none;
+  color: #fff;
+  margin-left: 10px;
+  resize: none;
+  min-height: 150px;
+  padding: 10px;
+}
+
+.contact-insta a,
+.contact-linkedin a,
+.contact-fb a {
+  margin-bottom: 0;
+  font-size: 1.7rem;
+  text-decoration: none;
+  color: white;
+}
+
+.contact-right a:hover {
+  color: #00a9e2;
+}
+
+.contact-inner .contact-left {
+  width: 60%;
+}
+
+.contact-inner .contact-right {
+  width: 40%;
+}
+
+.contact-left i {
+  width: 30px;
+  height: 30px;
+}
+
+.contact-right i {
+  height: 40px;
+  width: 40px;
+  font-size: 1.5rem;
+  text-align: center;
+  line-height: 40px;
+}
+
+.contact-left button {
+  background-color: #00a9e2;
+  color: white;
+  font-size: 1.5rem;
+  padding: 15px 25px;
+  border-radius: 25px;
+  text-align: center;
+  line-height: 20px;
+  border: 0;
+  outline: 0;
+  box-shadow: 0 0 16px 3px rgb(0 0 0 / 30%);
+}
+
+.cards--three__list > a {
+  width: auto;
+}
+
+@media screen and (orientation: landscape) {
+  .home.card:hover {
+    box-shadow: 0 0 16px 3px rgba(0, 0, 0, 0.3);
+    transform: scale(1.1);
+  }
+  .home.contact {
+    display: flex;
+  }
+
+  .home.inner-div {
+    flex: 8;
+    padding: 0 7em 1em 1em;
+    text-align: q center;
+    width: 100%;
+  }
+
+  .home.overlap {
+    box-shadow: 0 0 16px 2px rgba(0, 0, 0, 0.2);
+    background-color: var(--contact-bg-color);
+    transition: transform 0.4s;
+    border-radius: 2rem;
+    width: clamp(15vw, 20vw, 25vw);
+    height: 95%;
+    margin: auto;
+  }
+
+  .home.contact-svg {
+    width: 100%;
+  }
+
+  .home.about-DuroChip-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .home.about-info {
+    width: 33vw;
+    transition: transform 0.4s;
+    margin: 0vw 0vw 1vw 0vw;
+    padding: 1em 1em 1em 1em;
+  }
+
+  .home.about-div-photo {
+    box-shadow: 0 0 16px 2px rgba(0, 0, 0, 0.2);
+    transition: transform 0.4s;
+    width: 20vw;
+    border-radius: 2rem;
+  }
+
+  .home.about-image {
+    box-shadow: 0 0 16px 2px rgba(0, 0, 0, 0.2);
+    transition: transform 0.4s;
+    width: 40vw;
+    border-radius: 2rem;
+    padding: none;
+    margin: 1rem 1rem 1rem 1rem;
+  }
+
+  .home.about-photo-div-photo {
+    margin: 1rem 1rem 1rem 1rem;
+  }
+  .home.about-div-photo {
+    box-shadow: 0 0 16px 2px rgba(0, 0, 0, 0.2);
+    transition: transform 0.4s;
+    width: 40vw;
+    border-radius: 2rem;
+  }
+
+  .home.about-csi-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .home.about-csi-info {
+    width: 55vw;
+    transition: transform 0.4s;
+    margin: 0vw 0vw 0vw 3vw;
+    padding: 1em 1em 1em 1em;
+  }
+
+  .home.csi-logo {
+    transition: transform 0.4s;
+    width: 25vw;
+    margin: auto;
+    padding: none;
+    margin: 1rem 1rem 1rem 1rem;
+  }
+}
+
+.home.about-image:hover {
+  box-shadow: 0 0 16px 3px rgba(0, 0, 0, 0.3);
+  transform: scale(1.1);
+}
+
+.home.csi-logo-div {
+  margin: 1rem 1rem 1rem 1rem;
+}
+
+@media screen and (orientation: portrait) {
+  .home.card:hover {
+    box-shadow: 0 0 16px 3px rgba(0, 0, 0, 0.3);
+    transform: scale(1.00001);
+  }
+  /* .home.contact {
+        display: flex;
+    } */
+
+  .home.inner-div {
+    padding: 0 0 5rem 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  .home.overlap {
+    color: var(--blue);
+    box-shadow: 0 0 16px 2px rgba(0, 0, 0, 0.2);
+    background-color: var(--contact-bg-color);
+    transition: transform 0.4s;
+    border-radius: 2rem;
+    width: 95%;
+    height: 95%;
+    margin: 0 0 3rem 0;
+  }
+
+  .home.contact-svg {
+    width: 100%;
+  }
+
+  .home.about-DuroChip-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .home.about-info {
+    width: 85%;
+    transition: transform 0.4s;
+    margin: 0vw 0vw 0vw 0vw;
+    padding: 1em 1em 1em 1em;
+  }
+
+  .home.about-div-photo {
+    box-shadow: 0 0 16px 2px rgba(0, 0, 0, 0.2);
+    transition: transform 0.4s;
+    width: 95%;
+    border-radius: 2rem;
+  }
+
+  .home.about-image {
+    box-shadow: 0 0 16px 2px rgba(0, 0, 0, 0.2);
+    transition: transform 0.4s;
+    width: 80%;
+    border-radius: 2rem;
+    padding: none;
+    margin: 1rem 1rem 1rem 6rem;
+  }
+
+  .home.about-csi-block {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .home.about-photo-div-photo {
+    margin: 1rem 1rem 1rem 1rem;
+  }
+  .home.about-div-photo {
+    box-shadow: 0 0 16px 2px rgba(0, 0, 0, 0.2);
+    transition: transform 0.4s;
+    width: 90%;
+    border-radius: 2rem;
+  }
+
+  .home.about-csi-info {
+    width: 90%;
+    text-align: center;
+    transition: transform 0.4s;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  }
+
+  .home.csi-logo {
+    display: none;
+  }
+
+  .contact-inner {
+    flex-flow: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact-right {
+    margin-bottom: 30px;
+  }
+
+  .contact-btn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contact-name input,
+  .contact-email input,
+  .contact-msg textarea {
+    width: 400px;
+  }
+
+  .contact-inner .contact-left {
+    width: 90%;
+  }
+}
+
+.home.flex {
+  display: flex;
+  background-color: var(--contact-bg-color);
+  justify-content: space-between;
+  border-radius: 2rem;
+  padding: 1em 2em 1em 2em;
+  transition: transform 0.4s;
+}
+
+.home.flex:hover {
+  transform: scale(1.1);
+  color: var(--gray-dark);
+}
+
+.home.flex-ele {
+  transition: transform 0.4s;
+  animation-fill-mode: forwards;
+}
+
+.home.flex:hover .flex-ele {
+  transform: scale(1.1);
+  color: var(--gray-dark);
+}
+
+.home.icon-item {
+  color: var(--blue);
+  background-color: var(--contact-bg-color);
+  flex: 1;
+  text-align: left;
+}
+
+.home.icon-item-name {
+  color: var(--blue);
+  background-color: var(--contact-bg-color);
+  flex: 1;
+  text-align: end;
+}
+
+a:link.home {
+  text-decoration: none;
+  color: var(--blue);
+}
+
+a:visited.home {
+  text-decoration: none;
+  color: var(--blue);
+}
+
+a:hover.home {
+  text-decoration: none;
+  color: var(--blue);
+}
+
+a:active.home {
+  text-decoration: none;
+  color: var(--blue);
+}
+
+/* teachers cards */
+.home.titles {
+  text-align: center;
+}
+
+@media screen and (orientation: landscape) {
+  .home.teacher-container {
+    display: flex;
+    justify-content: center;
+    /* padding: 1em 1em 1em 1em; */
+  }
+
+  .home.teacher-card {
+    border-radius: 2rem;
+    width: 21vw;
+    transition: transform 0.4s;
+    text-align: center;
+    margin: 1rem 3rem 1rem 3rem;
+    box-shadow: 0 0 16px 2px rgba(0, 0, 0, 0.2);
+  }
+
+  .home.teacher-image {
+    border-radius: 2rem;
+    transition: transform 0.4s;
+    width: 100%;
+  }
+  .home.teacher-card:hover {
+    box-shadow: 0 0 16px 3px rgba(0, 0, 0, 0.3);
+    transform: scale(1.1) rotate(0.01deg);
+    transition-timing-function: ease-in-out;
+  }
+}
+
+@media screen and (orientation: portrait) {
+  .home.teacher-card {
+    transition: transform 0.4s;
+    box-shadow: 0 0 16px 2px rgba(0, 0, 0, 0.2);
+    margin: 10vw 5% 10vw 15%;
+    border-radius: 2rem;
+    padding-bottom: 1rem;
+    width: 70%;
+    text-align: center;
+  }
+
+  .home.teacher-image {
+    border-radius: 2rem;
+    transition: transform 0.4s;
+    width: 90%;
+  }
+
+  .home.teacher-card:hover {
+    box-shadow: 0 0 16px 3px rgba(0, 0, 0, 0.3);
+    transform: scale(1.00001) rotate(0.01deg);
+    transition-timing-function: ease-in-out;
+  }
+}
+
+.home.teacher-image {
+  transition: transform 0.2s;
+  transition-timing-function: ease-in-out;
+}
+
+.home.teacher-card:hover .teacher-image {
+  transform: scale(1.1);
+  box-shadow: 0 0 16px 3px rgba(0, 0, 0, 0.3);
+}
+
+.home.cards--three__list {
+  transition: 0.4s;
+  display: none;
+  color: white;
+  background-color: var(--gray-light);
+  padding: 1em 0 1em 0;
+  border-radius: 2rem;
+  width: 1vw;
+  z-index: 1001;
+}
+.home.teacher-card:hover .cards--three__list {
+  display: flex;
+  justify-content: space-around;
+  float: left;
+  position: absolute;
+  left: 0px;
+  bottom: 11rem;
+  width: 100%;
+}
+
+.home.t-contact {
+  transition: transform 0.2s;
+}
+
+.home.t-contact:hover i {
+  transform: scale(1.1);
+  color: var(--blue);
+  scale: 1.3;
+}
+
+.home.tg-message {
+  width: clamp(60vw, 65vw, 90vw);
+}
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  overflow: auto;
+}
+
+.counters {
+  color: #fff;
+  padding: 40px 20px;
+}
+
+.counters .container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+  text-align: center;
+}
+
+.counters i {
+  margin-bottom: 5px;
+}
+
+.counters .counter {
+  font-size: 45px;
+  margin: 10px 0;
+}
+
+@media (max-width: 700px) {
+  .counters .container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

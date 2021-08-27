@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <link rel="icon" href="./assets/images/CSI Logo blue.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./assets/styles/events.css" />
+    <link href="./assets/styles/preloader.css" rel="stylesheet" />
+    <link href="./assets/styles/footer.css" rel="stylesheet" />
+    <link href="./assets/styles/navbar.css" rel="stylesheet" />
+    <title>DuroChip</title>
+  </head>
+  <body onload="removeLoader()">
+    <!-- preloader -->
+    <div class="loader-box" id="preloader">
+      <div class="loader-container">
+        <span class="loader-circle"></span>
+        <span class="loader-circle"></span>
+        <span class="loader-circle"></span>
+        <span class="loader-circle"></span>
+      </div>
+    </div>
+    <script>
+      function removeLoader() {
+        var loader = document.getElementById("preloader");
+        loader.style.display = "none";
+      }
+    </script>
+
+    <!-- Navbar -->
+    <div class="nav-bar">
+      <div class="logo">
+        <img src="./assets/CSI Logo Nav.png" />
+      </div>
+      <div class="navs-container">
+        <div class="navs">
+          <a href="./index.html" class="nav-item">Home</a>
+          <a href="./aboutus.html" class="nav-item">About Us</a>
+          <a href="./events.html" class="nav-item active-nav">Events</a>
+          <a href="./domains.html" class="nav-item">Domains</a>
+          <a href="./team.html" class="nav-item">Team</a>
+          <a href="./gallery.html" class="nav-item">Gallery</a>
+          <a
+            href="https://pages.razorpay.com/DuroChipMembershipDrive2021"
+            class="nav-item"
+            target="_blanck"
+            >Register</a
+          >
+        </div>
+      </div>
+      <div class="nav-menu" onclick="toggleNav(this)">
+        <div class="hamburger-container">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+      </div>
+      <script>
+        function toggleNav(x) {
+          console.log("changed");
+          x.classList.toggle("mobile-nav");
+          x.classList.toggle("visible");
+          document.getElementsByClassName("navs")[0].classList.toggle("mobile");
+          document
+            .getElementsByClassName("navs-container")[0]
+            .classList.toggle("mobile");
+        }
+      </script>
+    </div>
+
+    <div class="events" id="events">
+      <h1>Events</h1>
+      <div class="xenia">
+        <h1>Xenia</h1>
+        <div class="xenia-top">
+          <div class="xenia-left">
+            <img src="./assets/images/xenia.png" alt="xenia" />
+          </div>
+          <div class="xenia-right">
+            <p>
+              XENIA is an Annual Technical Fiesta organized by Durochip CSI
+              Student Branch, formerly known as Enthusia. It is a three-day
+              technical fest where bright minds all around participate to
+              compete amongst themselves. XENIA emphasizes technical events
+              while also bringing you the opportunity of participating in
+              various ingenious non-technical events.
+            </p>
+            <h4>24 to 27 June, 2021</h4>
+            <div class="xenia-footfall">
+              <div class="footfall">
+                <h3>Footfall</h3>
+                <div class="footfall-main">
+                  <span class="footfall-count">3000</span>
+                  <span>+</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="xenia-bottom">
+          <div class="container">
+            <h2>The Event consisted of</h2>
+            <div class="accordion">
+              <div class="accordion-item">
+                <button id="accordion-button-1" aria-expanded="false">
+                  <span class="accordion-title">Technical Events</span
+                  ><span class="icon" aria-hidden="true"></span>
+                </button>
+                <div class="accordion-content">
+                  <p><i class="fas fa-circle"></i>Codestrike</p>
+                  <p><i class="fas fa-circle"></i>Ninja Coding</p>
+                  <p><i class="fas fa-circle"></i>Design Maestro</p>
+                  <p><i class="fas fa-circle"></i>MineCraft Build Battles</p>
+                  <p><i class="fas fa-circle"></i>Xenathon (Mini Hackathon)</p>
+                  <p><i class="fas fa-circle"></i>Circuitron</p>
+                  <p>
+                    <i class="fas fa-circle"></i>Innoveiren (Project
+                    Presentation)
+                  </p>
+                  <p><i class="fas fa-circle"></i>Data Cup</p>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <button id="accordion-button-2" aria-expanded="false">
+                  <span class="accordion-title">Non Technical Events</span
+                  ><span class="icon" aria-hidden="true"></span>
+                </button>
+                <div class="accordion-content">
+                  <p><i class="fas fa-circle"></i>Campus To Corporate</p>
+                  <p><i class="fas fa-circle"></i>Snap Hunt</p>
+                  <p><i class="fas fa-circle"></i>The Gift of Gab</p>
+                  <p><i class="fas fa-circle"></i>Game Zone</p>
+                  <p><i class="fas fa-circle"></i>Dream Team</p>
+                  <p><i class="fas fa-circle"></i>Shark Tank</p>
+                  <p><i class="fas fa-circle"></i>Couch Potato</p>
+                  <p><i class="fas fa-circle"></i>Xe-Natus</p>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <button id="accordion-button-3" aria-expanded="false">
+                  <span class="accordion-title">Industry Talks</span
+                  ><span class="icon" aria-hidden="true"></span>
+                </button>
+                <div class="accordion-content">
+                  <p>
+                    <i class="fas fa-circle"></i>You're Hired! The Ultimate
+                    Guide to Placements
+                  </p>
+                  <p>
+                    <i class="fas fa-circle"></i>New Age Digital Banking
+                    Technology and Rapid Development - Social Media Banking
+                  </p>
+                  <p>
+                    <i class="fas fa-circle"></i>Learn Everything About Building
+                    Minimum Viable Product
+                  </p>
+                  <p><i class="fas fa-circle"></i>Blockchain</p>
+                  <p>
+                    <i class="fas fa-circle"></i>
+                    Self Awareness through Emotional Intelligence Assessments
+                  </p>
+                  <p>
+                    <i class="fas fa-circle"></i>
+                    Future of Software Development and How to be Industry-ready
+                  </p>
+                  <p>
+                    <i class="fas fa-circle"></i>Journey to Cloud with
+                    Containerisation
+                  </p>
+                  <p>
+                    <i class="fas fa-circle"></i>Cloud Computing 2.0: Embracing
+                    Kubernetes
+                  </p>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <button id="accordion-button-5" aria-expanded="false">
+                  <span class="accordion-title">Build Up Events</span
+                  ><span class="icon" aria-hidden="true"></span>
+                </button>
+                <div class="accordion-content">
+                  <p>
+                    <i class="fas fa-circle"></i>Shutter Speed (Photography
+                    Contest)
+                  </p>
+                  <p>
+                    <i class="fas fa-circle"></i>A Tale to Tell (The Gift of Gab
+                    Wild Card)
+                  </p>
+                  <p><i class="fas fa-circle"></i>CodeStrike: Wild Card</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="events-container">
+        <div
+          class="event"
+          data-aos="fade-right"
+          data-aos-duration="1500"
+          data-aos-delay="50"
+        >
+          <div class="left">
+            <img src="https://source.unsplash.com/random" alt="img" />
+          </div>
+          <div class="right">
+            <h3>Engineer's Day 2020</h3>
+            <p>
+              The main aim of the event was to make all the students of the
+              college aware about the Ongoing innovations and projects .Students
+              from third and fourth year along with a teacher guardian are
+              working in many different domains and in several innovative
+              projects. Durochip CSI awarded these remarkable projects with a
+              virtual Engineers Ring as a token of appreciation.
+            </p>
+            <h4>15 September, 2020</h4>
+            <div class="attendees">
+              <h4>Attendees</h4>
+              <div class="count-main">
+                <span class="count">100</span>
+                <span>+</span>
+              </div>
+            </div>
+          </div>
+          <div class="left-2"></div>
+        </div>
+        <div
+          class="event"
+          data-aos="fade-left"
+          data-aos-duration="1500"
+          data-aos-delay="50"
+        >
+          <div class="left"></div>
+          <div class="right">
+            <h3>Sudocode Edition-1 2020</h3>
+            <p>
+              The main aim of the event was to conduct a competitive coding
+              competition among students from different colleges which would
+              test the logic, coding and analytical thinking of the students in
+              that time.Participating in such real time competitions would give
+              exposure to all participants and would ignite the passion to keep
+              learning new concepts which would definitely help them in the
+              future.
+            </p>
+            <h4>27 September, 2020</h4>
+            <div class="attendees">
+              <h4>Registrations</h4>
+              <div class="count-main">
+                <span class="count">500</span>
+                <span>+</span>
+              </div>
+            </div>
+          </div>
+          <div class="left-2">
+            <img src="https://source.unsplash.com/random" alt="img" />
+          </div>
+        </div>
+        <div
+          class="event"
+          data-aos="fade-right"
+          data-aos-duration="1500"
+          data-aos-delay="50"
+        >
+          <div class="left">
+            <img src="https://source.unsplash.com/random" alt="img" />
+          </div>
+          <div class="right">
+            <h3>DuroChip Investiture Ceremony (2020-21)</h3>
+            <p>
+              The event started by Welcome note by Student Representatives Vinay
+              Nair and Veronica Robert, followed by Introduction to DuroChip by
+              Dr. Kavita Sultanpure Ma’am, Introduction to the Activities and
+              Events conducted in the current academic year, Video on past and
+              present events of DuroChip, Declaration of various Posts, Speech
+              by Principal Ma’am, Vote of thanks by Prof. Ashwini Jewalikar
+              Ma’am and Prof. Kaustubh Sakhare Sir and concluded by the Vice
+              Presidents Satyajit Roy and Sonal Rao.
+            </p>
+            <h4>10 November, 2020</h4>
+            <div class="attendees">
+              <h4>Registrations</h4>
+              <div class="count-main">
+                <span class="count">175</span>
+                <span>+</span>
+              </div>
+            </div>
+          </div>
+          <div class="left-2"></div>
+        </div>
+        <div
+          class="event"
+          data-aos="fade-left"
+          data-aos-duration="1500"
+          data-aos-delay="50"
+        >
+          <div class="left"></div>
+          <div class="right">
+            <h3>CSI Orientation Ceremony (2020-21)</h3>
+            <p>
+              The main aim of the event was to have a brief introduction about
+              CSI, its Durochip student branch, its structure and all the
+              past-current and future activities. Dr. Kavita Sultanpure ma’am
+              addressed the event with a welcome note. For giving a gist about
+              DuroChip, a video was shown. The information about Computer
+              Society of India (CSI) along with its Durochip Student Branch
+              (DuroChip) was shared.
+            </p>
+            <h4>10 November, 2020</h4>
+            <div class="attendees">
+              <h4>Registrations</h4>
+              <div class="count-main">
+                <span class="count">120</span>
+                <span>+</span>
+              </div>
+            </div>
+          </div>
+          <div class="left-2">
+            <img src="https://source.unsplash.com/random" alt="img" />
+          </div>
+        </div>
+        <div
+          class="event"
+          data-aos="fade-right"
+          data-aos-duration="1500"
+          data-aos-delay="50"
+        >
+          <div class="left">
+            <img src="https://source.unsplash.com/random" alt="img" />
+          </div>
+          <div class="right">
+            <h3>Diwali Interview Sessions</h3>
+            <p>
+              DuroChip had taken the initiative to conduct interviews with
+              organizations that have been contributing something worthwhile to
+              society and the environment. The interviews were taken with Mr.
+              Ashok Deshmane, founder of Snehwan, which is a non-profit
+              organization working for the betterment of the downtrodden and
+              orphan category of children, Mr. Shubham Ghule, working as the
+              leader of operations in Nelda Foundations, which is a non-profit
+              organization and Zeel Patel, who is the president of GirlUp
+              Athena, which is a non-profit organization, with the motive to
+              empower girls, and to give them the confidence and support that
+              every girl needs today.
+            </p>
+            <h4>13 to 15 November, 2020</h4>
+            <!-- <div class="attendees">
+              <h4>Registrations</h4>
+              <div class="count-main">
+                <span class="count">120</span>
+                <span>+</span>
+              </div>
+            </div> -->
+          </div>
+          <div class="left-2"></div>
+        </div>
+        <div
+          class="event"
+          data-aos="fade-left"
+          data-aos-duration="1500"
+          data-aos-delay="50"
+        >
+          <div class="left"></div>
+          <div class="right">
+            <h3>Girscript</h3>
+            <p>
+              Initially, the entire club was divided into seven teams consisting
+              of eight members each. Everyone used their personal contacts to
+              get registrations and in order to fill up more participants, the
+              people who had participated in the previous events of the club
+              were also contacted. Every alternate day the scoreboard was
+              released to keep the teams active and encourage them to work.
+            </p>
+            <h4>20 November to 1 December, 2020</h4>
+            <div class="attendees">
+              <h4>Registrations</h4>
+              <div class="count-main">
+                <span class="count">65</span>
+                <span>+</span>
+              </div>
+            </div>
+          </div>
+          <div class="left-2">
+            <img src="https://source.unsplash.com/random" alt="img" />
+          </div>
+        </div>
+        <div
+          class="event"
+          data-aos="fade-right"
+          data-aos-duration="1500"
+          data-aos-delay="50"
+        >
+          <div class="left">
+            <img src="https://source.unsplash.com/random" alt="" />
+          </div>
+          <div class="right">
+            <h3>DuroChip's New Year Dhamaka</h3>
+            <p>
+              The aim of this event was to make the interaction between the new
+              members of the club. DuroChip Event team had organized a fun event
+              for the team members. Various fun events like Memezard of Oz,
+              Capture, Technofy Minds and Never Have I Ever were conducted. The
+              winners were announced along with the Vote of Thanks.
+            </p>
+            <h4>27 December, 2020</h4>
+            <div class="attendees">
+              <h4>Attendees</h4>
+              <div class="count-main">
+                <span class="count">75</span>
+                <span>+</span>
+              </div>
+            </div>
+          </div>
+          <div class="left-2"></div>
+        </div>
+        <div
+          class="event"
+          data-aos="fade-left"
+          data-aos-duration="1500"
+          data-aos-delay="50"
+        >
+          <div class="left"></div>
+          <div class="right">
+            <h3>DuroChip's FE Carnival</h3>
+            <p>
+              DuroChip took the initiative to organize an event to increase the
+              interaction and bonding between the newly joined First Year
+              Engineering Students. It consisted of a few fun activities and SIG
+              sessions which were both fun and good learning experience. It
+              consisted of events like TechnoFrenzy, which had sub events like
+              Quizzards of GA, Cup O'Kode and Technofy Minds, followed by Panel
+              Interview, Official DuroChip Orientation and Technical SIG
+              Training.
+            </p>
+            <h4>4 to 9 February, 2021</h4>
+            <div class="attendees">
+              <h4>Attendees</h4>
+              <div class="count-main">
+                <span class="count">75</span>
+                <span>+</span>
+              </div>
+            </div>
+          </div>
+          <div class="left-2">
+            <img src="https://source.unsplash.com/random" alt="" />
+          </div>
+        </div>
+        <div
+          class="event"
+          data-aos="fade-right"
+          data-aos-duration="1500"
+          data-aos-delay="50"
+        >
+          <div class="left">
+            <img src="https://source.unsplash.com/random" alt="img" />
+          </div>
+          <div class="right">
+            <h3>DuroChip's Snap Hunt</h3>
+            <p>
+              The aim of the event was to increase the bonding between FE’s in a
+              virtual environment. Also, the event was organized by the FE’s, so
+              they are getting hands on experience as well. Participants were
+              divided into groups of 8-10 randomly using MS Teams breakout
+              rooms. Various Technical and Non Technical questions were given,
+              and the participants had to find things or do the task and upload
+              Durochipure/video of themselves with it.
+            </p>
+            <h4>27 February, 2021</h4>
+            <div class="attendees">
+              <h4>Attendees</h4>
+              <div class="count-main">
+                <span class="count">120</span>
+                <span>+</span>
+              </div>
+            </div>
+          </div>
+          <div class="left-2">
+            <img src="https://source.unsplash.com/random" alt="img" />
+          </div>
+        </div>
+        <div
+          class="event"
+          data-aos="fade-left"
+          data-aos-duration="1500"
+          data-aos-delay="50"
+        >
+          <div class="left"></div>
+          <div class="right">
+            <h3>WIDS Pune Conference</h3>
+            <p>
+              A 24 hour virtual conference was held by Women in Data
+              Science(WiDS),Pune on March 8, on occasion of Women’s Day, in
+              collaboration with Stanford University-ICME Department. The
+              DuroChip team participated as volunteers. Prominent women
+              personalities in data science from all over the world were invited
+              to speak. We got an opportunity to listen to global influencers,
+              thought leaders and experts selected by WiDS Pune and Stanford
+              University’s WiDS team.
+            </p>
+            <h4>8 March, 2021</h4>
+            <div class="attendees">
+              <h4>Volunteers</h4>
+              <div class="count-main">
+                <span class="count">54</span>
+                <span>+</span>
+              </div>
+            </div>
+          </div>
+          <div class="left-2">
+            <img src="https://source.unsplash.com/random" alt="" />
+          </div>
+        </div>
+        <div
+          class="event"
+          data-aos="fade-right"
+          data-aos-duration="1500"
+          data-aos-delay="50"
+        >
+          <div class="left">
+            <img src="https://source.unsplash.com/random" alt="img" />
+          </div>
+          <div class="right">
+            <h3>Women’s Day 2021</h3>
+            <p>
+              Women’s Day was celebrated in Durochip by DuroChip, in
+              collaboration with Durochip Art Circle, to honor the women around
+              the world who’ve not only made a significant change in our lives
+              but also impacted people around the world. The honorable and
+              esteemed guest speaker for the event was Leena Patel, who is the
+              founder and CEO of One Soul Army, India’s first autonomous global
+              entrepreneurial system.
+            </p>
+            <h4>8 March, 2021</h4>
+            <div class="attendees">
+              <h4>Attendees</h4>
+              <div class="count-main">
+                <span class="count">120</span>
+                <span>+</span>
+              </div>
+            </div>
+          </div>
+          <div class="left-2"></div>
+        </div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script>
+      $(".count").each(function () {
+        $(this)
+          .prop("Counter", 0)
+          .animate(
+            {
+              Counter: $(this).text(),
+            },
+            {
+              duration: 700,
+              easing: "swing",
+              step: function (now) {
+                $(this).text(Math.ceil(now));
+              },
+            }
+          );
+      });
+      $(".footfall-count").each(function () {
+        $(this)
+          .prop("Counter", 0)
+          .animate(
+            {
+              Counter: $(this).text(),
+            },
+            {
+              duration: 2700,
+              easing: "swing",
+              step: function (now) {
+                $(this).text(Math.ceil(now));
+              },
+            }
+          );
+      });
+      AOS.init();
+      const items = document.querySelectorAll(".accordion button");
+
+      function toggleAccordion() {
+        const itemToggle = this.getAttribute("aria-expanded");
+
+        for (i = 0; i < items.length; i++) {
+          items[i].setAttribute("aria-expanded", "false");
+        }
+
+        if (itemToggle == "false") {
+          this.setAttribute("aria-expanded", "true");
+        }
+      }
+
+      items.forEach((item) => item.addEventListener("click", toggleAccordion));
+    </script>
+
+    <!-- Footer -->
+    <div class="footer">
+      <img src="./assets/images/CSI Logo blue.png" />
+      <div class="row info">
+        <div class="col-lg-4 visit">
+          <h3>Visit</h3>
+          <div class="row content">
+            <a href="./index.html" class="col-12 links">Home</a>
+            <a href="./aboutus.html" class="col-12 links">About Us</a>
+            <a href="./events.html" class="col-12 links">Events</a>
+            <a href="./domains.html" class="col-12 links">Domains</a>
+            <a href="./team.html" class="col-12 links">Team</a>
+            <a href="./gallery.html" class="col-12 links">Gallery</a>
+          </div>
+        </div>
+        <div class="col-lg-4 address">
+          <h3>Address</h3>
+          <div>
+            Survey No. 27, Near Trimurti Chowk,<br />
+            Bharati Vidyapeeth Campus,<br />
+            Dhankawadi, Pune, Maharashtra 411043
+          </div>
+        </div>
+        <div class="col-lg-4 contact">
+          <h3>Contact</h3>
+          <div class="row">
+            <div class="col-3">Email:</div>
+            <div class="col-9">
+              <a href="DuroChip@Durochip.edu">DuroChip@Durochip.edu</a>
+            </div>
+          </div>
+          <div class="row content">
+            <div class="col-3">Mobile</div>
+            <div class="col-9">+91 7028929568</div>
+          </div>
+        </div>
+      </div>
+      <hr class="text-light mx-5" />
+      <div class="solcial-media">
+        <a
+          href="https://www.instagram.com/csiDurochip/"
+          target="_blanck"
+          class="fa fa-instagram"
+        ></a>
+        <a
+          href="https://www.facebook.com/csiDurochip/"
+          target="_blanck"
+          class="fa fa-facebook"
+        ></a>
+        <a
+          href="https://www.linkedin.com/company/Durochip-csi/mycompany/"
+          target="_blanck"
+          class="fa fa-linkedin"
+        ></a>
+      </div>
+      <div class="copyrights">Copyrights DuroChip 2021</div>
+    </div>
+  </body>
+</html>

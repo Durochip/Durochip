@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+  .team {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background: #2a2a2e;
+    /* ###################################change color here */
+    min-height: 100vh;
+  }
+  
+  section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background: #008cff;
+    
+    clip-path: circle(30% at right 70%); */
+  }
+  section::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background: #008cff;
+    
+    clip-path: circle(20% at 10% 10%); */
+  }
+  
+  .team .container {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 40px 0;
+    text-align: center;
+  }
+  .team .container h1 {
+    position: relative;
+    justify-content: center;
+  }
+  .team .container .card {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background: rgba(255, 255, 255, 0.05);
+    margin: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+  }
+  .team .container .card .content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0.8;
+    transition: 0.5s;
+  }
+  
+  .team .container .card:hover .content {
+    opacity: 1;
+    transform: translateY(-20px);
+    transform: scale(1.1);
+  }
+  .team .container .card .content .imgBx {
+    position: relative;
+    width: 155px;
+    height: 155px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 10px solid #141313;
+    /* ###################################change color here */
+  }
+  .team .container .card .content .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .team .container .card .content .contentBx h3 {
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    margin: 20px 0px 10px;
+    line-height: 1.1em;
+  }
+  
+  .team .container .card .content .contentBx h3 span {
+    font-size: 15px;
+    font-weight: 300;
+    text-transform: initial;
+  }
+  .team .container .card .sci {
+    bottom: 50px;
+    display: flex;
+    margin-left: -2rem;
+  }
+  
+  .team .container .card .sci li {
+    list-style: none;
+    /* margin: 0 10px; */
+    margin-inline: 10px;
+    transform: translateY(40px);
+    transition: 0.5s;
+    transition-delay: calc(0.1s * var(--i));
+  }
+  .team .container .card:hover .sci li {
+    transform: translateY(15px);
+  }
+  .team .container .card .sci li a {
+    color: white;
+    font-size: 24px;
+  }
+  
+  /* #text {
+    font-family: "Montserrat", sans-serif;
+    font-size: 2em;
+    color: white;
+    display: inline-block;
+    overflow: hidden;
+    letter-spacing: 0.2em;
+    animation: typing 5s steps(30, end), blink 0.75s step-end infinite;
+    white-space: nowrap;
+    font-size: 30px;
+    font-weight: 700;
+    border-right: 4px solid orange;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 0 auto;
+  }
+  #text:last-of-type {
+    animation: type 0.33s infinite;
+  }
+  @keyframes type {
+    to {
+      opacity: 0;
+    }
+  }
+  
+  #heading {
+    font-family: "Montserrat", sans-serif;
+    font-size: 2em;
+    color: white;
+  } */
+  .team h1,
+  h2 {
+    font-weight: 200;
+    margin: 0.4em 0;
+    color: white;
+  }
+  .txt-rotate {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1em;
+    color: white;
+    letter-spacing: 0.2em;
+    animation: typing 5s steps(30, end), blink 0.75s step-end infinite;
+    white-space: nowrap;
+  
+    font-weight: 700;
+  }
+  h1 {
+    font-size: 3.5em;
+  }
+  h2 {
+    color: #888;
+    font-size: 2em;
+  }
+  .js-tilt-glare {
+    border-radius: 15px;
+  }
+  

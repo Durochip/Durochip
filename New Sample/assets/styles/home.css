@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,600");
+
+@font-face {
+  font-family: "SansBold";
+  src: url("../../assets/fonts/PTSans-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Barlow";
+  src: url("../../assets/fonts/Barlow-Light.ttf");
+}
+
+* {
+  border: 0;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+:root,
+.home {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  font-family: "Barlow";
+}
+
+.home .home-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  left: 0;
+  top: 0;
+  background-image: url("https://source.unsplash.com/random");
+  background-size: cover;
+  background-position: center;
+}
+
+.home .home-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.home .logo img {
+  max-width: 20%;
+  height: 20%;
+}
+
+.home .logo {
+  padding: 10px;
+  left: 0;
+  top: 0;
+  display: flex;
+  align-items: top;
+  justify-content: left;
+  margin: auto;
+  position: absolute;
+  z-index: 1;
+}
+
+.home .console-container {
+  font-family: "Roboto Mono", monospace;
+  font-size: 3.5em;
+  text-align: center;
+  height: 200px;
+  width: 100%;
+  display: block;
+  position: absolute;
+  color: white;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 1;
+}
+.home .console-underscore {
+  display: inline-block;
+  position: relative;
+  top: -0.14em;
+  left: 10px;
+}
+
+.home .header {
+  /* position: fixed;
+
+  flex-direction:column;
+
+  justify-content: center;  */
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  /* background: #1abc9c; */
+  color: rgb(83, 83, 83);
+  font-size: 30px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 90;
+  font-family: "SansBold";
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 0px rgb(0, 0, 0);
+  border-radius: 0px;
+  background: black;
+}
+
+::-webkit-scrollbar-thumb {
+  background: none;
+  -webkit-box-shadow: inset 0 0 6px rgb(123, 124, 124);
+}

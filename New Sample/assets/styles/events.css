@@ -1,0 +1,431 @@
+@font-face {
+  font-family: 'SansBold';
+  src: url('../../assets/fonts/PTSans-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'Barlow';
+  src: url('../../assets/fonts/Barlow-Light.ttf');
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.events {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Barlow';
+  background-color: #35353A;
+}
+
+.events>h1{
+  font-size: 4rem;
+  margin-bottom: 50px;
+  padding-top: 50px;
+  font-family: 'SansBold';
+  color: #00A9E2;
+  text-transform: uppercase;
+}
+
+.events-container {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  overflow-x: hidden;
+}
+
+.event {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 500px;
+  width: 100%;
+  margin-bottom: 40px;
+  overflow-x: hidden;
+}
+
+.event .left,
+.event .left-2 {
+  width: 50%;
+  height: 80%;
+  background-color: aqua;
+  box-shadow: 0 0 20px rgb(0 0 0 / 20%);
+}
+
+.event .left img,.event .left-2 img{
+  width: 100%;
+  height: 100%;
+}
+
+.event:nth-child(odd) .left-2 {
+  visibility: hidden;
+}
+
+.event:nth-child(even) .left {
+  visibility: hidden;
+}
+
+.event .right {
+  width: 50%;
+  height: 100%;
+  background-color: #00A9E2;
+  box-shadow: 0 0 20px rgb(0 0 0 / 20%);
+  padding: 30px;
+}
+
+.event .right h3 {
+  font-size: 1.7rem;
+  margin-bottom: 30px;
+  font-family: 'SansBold';
+  color: white;
+}
+
+.event .right p {
+  font-size: 1rem;
+  margin-bottom: 30px;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.event .right .attendees {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.event .right .attendees h4 {
+  font-size: 1.6rem;
+  margin-right: 20px;
+}
+
+.event .right .attendees .count-main {
+  font-size: 1.2rem;
+  height: 60px;
+  width: 60px;
+  line-height: 40px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 100%;
+  border: 4px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.event .right .attendees .count-main .count {
+  display: inline;
+  font-weight: 600;
+}
+
+.xenia {
+  width: 80%;
+  position: relative;
+  box-shadow: 0 0 10px rgba(0,0,0,20%);
+  z-index: 0;
+  padding: 0 30px;
+  margin-bottom: 40px;
+  background-color: #2A2A2E;
+  transition: 200ms ease-in-out;
+  color: white;
+}
+
+.xenia:hover{
+  box-shadow:0 0 20px #00a9e250;
+}
+
+.xenia-left{
+    height: fit-content;
+    width: fit-content;
+}
+
+.xenia-left img{
+    width: 300px;
+    height: 300px;
+}
+
+.xenia-right{
+    padding: 30px;
+}
+
+.xenia-right p{
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.xenia-right h4{
+  font-size: 1.3rem;
+  margin-bottom: 30px;
+}
+
+.xenia-right .footfall{
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.xenia-right .footfall h3{
+  margin-right: 20px;
+}
+
+.xenia-right .footfall .footfall-main{
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 10px rgba(0,0,0,20%);
+}
+
+.xenia h1{
+    text-align: center;
+    margin-bottom: 30px;
+    padding-top: 30px;
+    font-size: 3rem;
+    font-family: 'SansBold';
+    color: white;
+    text-transform: uppercase;
+}
+
+.xenia-top{
+    display: flex;
+}
+
+.xenia .container {
+  margin: 0 auto;
+  padding: 3rem 4rem;
+}
+
+.xenia .container h2{
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-family: 'SansBold';
+}
+
+.xenia .accordion .accordion-item {
+  border-bottom: 1px solid #e5e5e5;
+}
+.xenia .accordion .accordion-item button[aria-expanded="true"] {
+  border-bottom: 1px solid #03b5d2;
+}
+.xenia .accordion button {
+  position: relative;
+  display: block;
+  text-align: left;
+  width: 100%;
+  padding: 1em 0;
+  color: #7288a2;
+  font-size: 1.15rem;
+  font-weight: 400;
+  border: none;
+  background: none;
+  outline: none;
+}
+.xenia .accordion button:hover,
+.xenia .accordion button:focus {
+  cursor: pointer;
+  color: #03b5d2;
+}
+.xenia .accordion button:hover::after,
+.xenia .accordion button:focus::after {
+  cursor: pointer;
+  color: #03b5d2;
+  border: 1px solid #03b5d2;
+}
+.xenia .accordion button .accordion-title {
+  padding: 1em 1.5em 1em 0;
+  font-size: 1.6rem;
+  color: #aaa;
+}
+.xenia .accordion button .icon {
+  display: inline-block;
+  position: absolute;
+  top: 18px;
+  right: 0;
+  width: 22px;
+  height: 22px;
+  border: 1px solid;
+  border-radius: 22px;
+}
+.xenia .accordion button .icon::before {
+  display: block;
+  position: absolute;
+  content: "";
+  top: 9px;
+  left: 5px;
+  width: 10px;
+  height: 2px;
+  background: currentColor;
+}
+.xenia .accordion button .icon::after {
+  display: block;
+  position: absolute;
+  content: "";
+  top: 5px;
+  left: 9px;
+  width: 2px;
+  height: 10px;
+  background: currentColor;
+}
+.xenia .accordion button[aria-expanded="true"] {
+  color: #03b5d2;
+}
+.xenia .accordion button[aria-expanded="true"] .icon::after {
+  width: 0;
+}
+.xenia .accordion button[aria-expanded="true"] + .accordion-content {
+  opacity: 1;
+  max-height: 120vh;
+  transition: all 200ms linear;
+  will-change: opacity, max-height;
+}
+.xenia .accordion .accordion-content {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 200ms linear, max-height 200ms linear;
+  will-change: opacity, max-height;
+}
+.xenia .accordion .accordion-content p {
+  font-size: 1.3rem;
+  font-weight: 300;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+.xenia .accordion .accordion-content p i{
+  margin-right: 10px;
+  font-size: 1rem;
+}
+
+@media (max-width: 1400px) {
+  .events-container {
+    width: 90%;
+  }
+  .event .right {
+    width: 60%;
+  }
+}
+
+@media (max-width: 1100px) {
+  .event .left-2 {
+    display: none;
+  }
+  .event .left {
+    visibility: visible !important;
+  }
+  .event:nth-child(even) {
+    flex-flow: row-reverse;
+  }
+  .xenia .xenia-top{
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 800px) {
+  .event .right .attendees {
+    margin-top: 10px;
+  }
+  .event {
+    flex-flow: column !important;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+  }
+  .event .left {
+    height: 300px;
+    width: 70%;
+  }
+  .event .right {
+    width: 80%;
+  }
+  .xenia .container{
+    padding: 1rem 0;
+  }
+  .xenia .xenia-right{
+    padding: 30px 0;
+  }
+  .xenia .xenia-right p{
+    font-size: 1.3rem;
+  }
+  .xenia .container h2{
+    font-size: 1.5rem;
+  }
+  .xenia .accordion button .accordion-title {
+    font-size: 1.3rem;
+  }
+  .xenia .accordion .accordion-content p{
+    font-size: 1rem;
+  }
+  .xenia .accordion .accordion-content p i{
+    font-size: 0.6rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .event .left {
+    width: 85%;
+  }
+  .event .right {
+    width: 95%;
+  }
+  .event .right h3 {
+    font-size: 1.4rem;
+    margin-bottom: 30px;
+  }
+  .event .right .attendees h4 {
+    font-size: 1.3rem;
+    margin-right: 20px;
+  }
+  .event .right .attendees .count-main {
+    height: 50px;
+    width: 50px;
+    font-size: 1rem;
+  }
+  .xenia{
+    width: 100%;
+    box-shadow: none;
+  }
+  .xenia .xenia-left img{
+    width: 260px;
+    height: 260px;
+  }
+  .events>h1{
+    font-size: 3rem;
+    margin-bottom: 30px;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+
+/* color scheme
+
+light grey - #35353A
+med grey - #2D2D32
+dark grey - #2A2A2E
+
+blue logo color - #00A9E2
+
+white - #ffffff */
+
+.accordion-item{
+  background-color: rgba(0,0,0,0);
+}

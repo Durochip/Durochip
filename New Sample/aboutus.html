@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link href='./assets/styles/aboutus.css' rel='stylesheet' />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script src="https://kit.fontawesome.com/ecbb0db43c.js" crossorigin="anonymous"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <title>DuroChip</title>
+
+  <link
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+  rel="stylesheet"
+  integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+  crossorigin="anonymous"
+/>
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+/>
+
+<link rel="icon" href="./assets/images/CSI Logo blue.png" />
+  <link href="./assets/styles/preloader.css" rel="stylesheet" />
+  <link href="./assets/styles/footer.css" rel="stylesheet" />
+  <link href="./assets/styles/navbar.css" rel="stylesheet" />
+</head>
+
+<body class="home" onload="removeLoader()">
+
+    <!-- preloader -->
+    <div class="loader-box" id="preloader">
+      <div class="loader-container">
+        <span class="loader-circle"></span>
+        <span class="loader-circle"></span>
+        <span class="loader-circle"></span>
+        <span class="loader-circle"></span>
+      </div>
+    </div>
+    <script>
+      function removeLoader(){
+        var loader = document.getElementById('preloader');
+        loader.style.display="none";
+      }
+    </script>
+
+    <!-- Navbar -->
+    <div class="nav-bar">
+      <div class="logo">
+        <img src="./assets/CSI Logo Nav.png" />
+      </div>
+      <div class="navs-container">
+        <div class="navs">
+          <a href="./index.html" class="nav-item">Home</a>
+          <a href="./aboutus.html" class="nav-item active-nav">About Us</a>
+          <a href="./events.html" class="nav-item">Events</a>
+          <a href="./domains.html" class="nav-item">Domains</a>
+          <a href="./team.html" class="nav-item">Team</a>
+          <a href="./gallery.html" class="nav-item">Gallery</a>
+          <a href="https://pages.razorpay.com/DuroChipMembershipDrive2021" class="nav-item" target="_blanck">Register</a>
+        </div>
+      </div>
+      <div class="nav-menu" onclick="toggleNav(this)">
+        <div class="hamburger-container">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+      </div>
+      <script>
+        function toggleNav(x) {
+          console.log("changed");
+          x.classList.toggle("mobile-nav");
+          x.classList.toggle("visible");
+          document.getElementsByClassName('navs')[0].classList.toggle('mobile');
+          document.getElementsByClassName('navs-container')[0].classList.toggle('mobile')
+        }
+      </script>
+    </div>
+
+  <section class="counters">
+    <div class="container">
+      <div>
+        <i class="fa fa-users fa-4x"></i>
+        <div class="counter" data-target="447" style="padding-top:2% ;">0</div>
+        <h3>Members</h3>
+      </div>
+      <div>
+        <i class="fas fa-sim-card fa-4x"></i>
+        <div class="counter" data-target="8" style="padding-top:2% ;">0</div>
+        <h3>Tech-Domains</h3>
+      </div>
+      <div>
+        <i class="fa fa-pen-fancy fa-4x"></i>
+        <div class="counter" data-target="7" style="padding-top:2% ;">0</div>
+        <h3>Non-Tech-Domains</h3>
+      </div>
+      <div>
+        <i class="fa fa-laptop fa-4x"></i>
+        <div class="counter" data-target="181" style="padding-top:2% ;">0</div>
+        <h3>Comp.Eng.</h3>
+      </div>
+      <div>
+        <i class="fas fa-microchip fa-4x" style="padding-top:2% ;"></i>
+        <div class="counter" data-target="121">0</div>
+        <h3>ENTC</h3>
+      </div>
+      <div>
+        <i class="fas fa-desktop fa-4x" style="padding-top:2% ;"></i>
+        <div class="counter" data-target="139">0</div>
+        <h3>IT</h3>
+      </div>
+    </div>
+  </section>
+
+  <div class="home about-DuroChip-block" data-aos="fade-up">
+    <div class="home about-info" >
+      <h1>DuroChip</h1>
+      <h6></h6>
+      <p>
+        DuroChip, working under CSI, was established in 2016 with an objective to facilitate research,
+        knowledge and career enhancement for the students, along with inspiring and nurturing new entrants into the
+        industry.
+      </p>
+      <p>
+        It provides a platform for technical and non-technical education. One of our key strengths at DuroChip is our rate
+        of growth
+        in a short span of time. We take pride in the fact that we are one of the best student communities in Pune,
+        still growing
+        at an exponential rate.
+      </p>
+      <!-- <ul>
+          <li>
+            We have teams for all technical domains that include Web Development, App Development, Machine Learning,
+            Competitive Programming, Blockchain, Cyber Security, DevOps, Cloud Computing etc.
+          </li>
+          <li>
+            We conduct various Events and Seminars throughout the year including our flagship annual event, Xenia.
+          </li>
+          <li>
+            We have a team of 400+ dedicated members.
+          </li>
+        </ul> -->
+    </div>
+
+    <div class="about-photo-div"><img src="https://source.unsplash.com/random"
+        alt="Teacher name" class="home about-image"> </div>
+  </div>
+
+
+  <div class="home about-csi-block" data-aos="fade-up">
+    <div class="csi-logo-div"><img src="https://source.unsplash.com/random" alt="Teacher name" class="home csi-logo">
+    </div>
+    <div class="home about-csi-info">
+      <h1>Computer Society of India</h1>
+      <h6></h6>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quod delectus nihil dolor, ratione itaque aut necessitatibus voluptas odit, illo earum officia deleniti corporis cupiditate et accusamus alias rerum nulla!
+      </p>
+      <!-- <p>
+          The organisation has grown to an enviable size of 100,000 strong members consisting of professionals with varied backgrounds
+          including Software developers, Scientists, Academicians, Project Managers, CIO’s , CTO’s & IT vendors to just name a few.
+          It has spread its branches all over the country. Currently having 488 student branches and rooted firmly at 73 different
+          locations, CSI has plans of opening many more chapters & activity centers in smaller towns and cities of the country.
+          The idea is to spread the knowledge, and provide opportunities to as many interested as possible.
+        </p> -->
+    </div>
+
+  </div>
+
+
+    <div class="contact-us" data-aos="fade-up">
+      <h1>Contact Us</h1>
+      <div class="contact-inner">
+        <div class="contact-left">
+          <form>
+            <div class="contact-name">
+              <i class="fa fa-user"></i>
+              <input type="text" name="name">
+            </div>
+            <div class="contact-email">
+              <i class="fa fa-envelope"></i>
+              <input type="email" name="email">
+            </div>
+            <div class="contact-msg">
+              <i class="fa fa-pen"></i>
+              <textarea name="message"></textarea>
+            </div>
+            <div class="contact-btn"><button>Submit</button></div>
+          </form>
+        </div>
+        <div class="contact-right">
+          <div class="contact-insta">
+            <i class="fab fa-instagram"></i>
+            <a href="https://www.instagram.com/csipict/" target="_blank">Instagram</a>
+          </div>
+          <div class="contact-linkedin">
+            <i class="fab fa-linkedin"></i>
+            <a href="https://www.linkedin.com/company/pict-csi/mycompany/" target="_blank">LinkedIn</a>
+          </div>
+          <div class="contact-fb">
+            <i class="fab fa-facebook-square"></i>
+            <a href="https://www.facebook.com/csipict/" target="_blank">Facebook</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>const counters = document.querySelectorAll('.counter');
+    const speed = 150; // The lower the slower
+
+    counters.forEach(counter => {
+      const updateCount = () => {
+        const target = +counter.getAttribute('data-target');
+        const count = +counter.innerText;
+
+        // Lower inc to slow and higher to slow
+        const inc = 1;
+
+        // console.log(inc);
+        // console.log(count);
+
+        // Check if target is reached
+        if (count < target) {
+          // Add inc to count and output in counter
+          counter.innerText = count + inc;
+          // Call function every ms
+          setTimeout(updateCount, 1);
+        } else {
+          counter.innerText = target;
+        }
+      };
+
+      updateCount();
+    });</script>
+  <script>
+    AOS.init();
+    offset = 100;
+    delay = 400;
+    duration = 1000;
+    easing = "ease-out-cubic";
+  </script>
+
+    <!-- Footer -->
+    <div class="footer">
+      <img src="./assets/images/CSI Logo blue.png" />
+      <div class="row info">
+        <div class="col-lg-4 visit">
+          <h3>Visit</h3>
+          <div class="row content">
+            <a href='./' class="col-12 links">Home</a>
+            <a href='./' class="col-12 links">About Us</a>
+            <a href='./' class="col-12 links">Events</a>
+            <a href='./' class="col-12 links">Domains</a>
+            <a href='./' class="col-12 links">Team</a>
+            <a href='./' class="col-12 links">Gallery</a>
+          </div>
+        </div>
+        <div class="col-lg-4 address">
+          <h3>Address</h3>
+          <div>
+            Survey No. 27, Near Trimurti Chowk,<br> Bharati Vidyapeeth Campus,<br> Dhankawadi, Pune, Maharashtra 411043
+          </div>
+        </div>
+        <div class="col-lg-4 contact">
+          <h3>Contact</h3>
+          <div class="row">
+            <div class="col-3">Email:</div>
+            <div class="col-9">
+              <a href="DuroChip@pict.edu">DuroChip@pict.edu</a>
+            </div>
+          </div>
+          <div class="row content">
+            <div class="col-3">Mobile</div>
+            <div class="col-9">+91 7028929568</div>
+          </div>
+        </div>
+      </div>
+      <hr class="text-light mx-5" />
+      <div class="solcial-media">
+        <a href="https://www.instagram.com/csipict/" target="_blanck" class="fa fa-instagram"></a>
+        <a href="https://www.facebook.com/csipict/" target="_blanck" class="fa fa-facebook"></a>
+        <a href="https://www.linkedin.com/company/pict-csi/mycompany/" target="_blanck" class="fa fa-linkedin"></a>
+      </div>
+      <div class="copyrights">Copyrights DuroChip 2021</div>
+    </div>
+
+</body>
+
+</html>

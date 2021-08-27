@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Durochip</title>
+  <link href="./assets/styles/footer.css" rel="stylesheet" />
+  <link href="./assets/styles/navbar.css" rel="stylesheet" />
+  <link href="./assets/styles/preloader.css" rel="stylesheet" />
+  <link href="./assets/styles/home.css" rel="stylesheet" />
+
+
+  <meta name="robots" content="index, follow">
+  <meta name="keywords" content="Durochip, Durochip, Durochip Student Branch, Durochip, Durochip, Durochip, Durochip, Durochip">
+  <meta name="description" content="Durochip Student Branch ">
+
+  <link
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+  rel="stylesheet"
+  integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+  crossorigin="anonymous"
+/>
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+/>
+<link rel="icon" href="./assets/images/CSI Logo blue.png" />
+</head>
+
+<body onload="removeLoader()">
+  <!-- preloader -->
+  <div class="loader-box" id="preloader">
+    <div class="loader-container">
+      <span class="loader-circle"></span>
+      <span class="loader-circle"></span>
+      <span class="loader-circle"></span>
+      <span class="loader-circle"></span>
+    </div>
+  </div>
+  <script>
+    function removeLoader(){
+      var loader = document.getElementById('preloader');
+      loader.style.display="none";
+    }
+  </script>
+
+  
+    <!-- Navbar -->
+    <div class="nav-bar">
+      <div class="logo">
+        <img src="./assets/CSI Logo Nav.png" />
+      </div>
+      <div class="navs-container">
+        <div class="navs">
+          <a href="./index.html" class="nav-item active-nav">Home</a>
+          <a href="./aboutus.html" class="nav-item">About Us</a>
+          <a href="./events.html" class="nav-item">Events</a>
+          <a href="./domains.html" class="nav-item">Domains</a>
+          <a href="./team.html" class="nav-item">Team</a>
+          <a href="./gallery.html" class="nav-item">Gallery</a>
+          <a href="" class="nav-item" target="_blanck">Register</a>
+        </div>
+      </div>
+      <div class="nav-menu" onclick="toggleNav(this)">
+        <div class="hamburger-container">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+      </div>
+      <script>
+        function toggleNav(x) {
+          console.log("changed");
+          x.classList.toggle("mobile-nav");
+          x.classList.toggle("visible");
+          document.getElementsByClassName('navs')[0].classList.toggle('mobile');
+          document.getElementsByClassName('navs-container')[0].classList.toggle('mobile')
+        }
+      </script>
+    </div>
+
+  <div class="home">
+    <div class="home-bg"></div>
+    <div class="home-overlay"></div>
+    <div class='console-container'>
+      <span id='text'></span>
+      <div class='console-underscore' id='console'>&#95;</div>
+    </div>
+    <section id="page1">
+      <div class="header"></div>
+    </section>
+  </div>
+  </div>
+
+
+    <!-- Footer -->
+    <div class="footer">
+      <img src="./assets/images/CSI Logo blue.png" />
+      <div class="row info">
+        <div class="col-lg-4 visit">
+          <h3>Visit</h3>
+          <div class="row content">
+            <a href='./index.html' class="col-12 links">Home</a>
+            <a href='./aboutus.html' class="col-12 links">About Us</a>
+            <a href='./events.html' class="col-12 links">Events</a>
+            <a href='./domains.html' class="col-12 links">Domains</a>
+            <a href='./team.html' class="col-12 links">Team</a>
+            <a href='./gallery.html' class="col-12 links">Gallery</a>
+          </div>
+        </div>
+        <div class="col-lg-4 address">
+          <h3>Address</h3>
+          <div>
+            Survey No. 27, Near Trimurti Chowk,<br> Bharati Vidyapeeth Campus,<br> Dhankawadi, Pune, Maharashtra 411043
+          </div>
+        </div>
+        <div class="col-lg-4 contact">
+          <h3>Contact</h3>
+          <div class="row">
+            <div class="col-3">Email:</div>
+            <div class="col-9">
+              <a href="Durochip@pict.edu">Durochip@pict.edu</a>
+            </div>
+          </div>
+          <div class="row content">
+            <div class="col-3">Mobile</div>
+            <div class="col-9">+91 7028929568</div>
+          </div>
+        </div>
+      </div>
+      <hr class="text-light mx-5" />
+      <div class="solcial-media">
+        <a href="https://www.instagram.com/csipict/" target="_blanck" class="fa fa-instagram"></a>
+        <a href="https://www.facebook.com/csipict/" target="_blanck" class="fa fa-facebook"></a>
+        <a href="https://www.linkedin.com/company/pict-csi/mycompany/" target="_blanck" class="fa fa-linkedin"></a>
+      </div>
+      <div class="copyrights">Copyrights Durochip Student Branch 2021</div>
+    </div>
+  <script src="./assets/js/home.js"></script>
+
+
+</body>
+
+</html>
